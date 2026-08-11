@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="teacher.css"/>
+    <link rel="stylesheet" type="text/css" href="skycafe.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <div class="inner-header">
+            <img src="atemslogo3.png" alt="atems-logo" class="logo">
+            <div class="inner-buttons">
+                <button class="homebutton" id="homepagebutton">Homepage</button>
+                <button class="homebutton" id="teacherbutton">Teacher Ordering</button>
+                <button class="homebutton" id="reservationpagebutton">Reservations</button>
+            </div>
+        </div>
+    </div>
+    <div class="bodyelement">
+        <div class="orderplacement">
+            <h1 class="placeorder">Place your order!</h1>
+            <div class="userinputs">
+                <input type="text" class="input1" placeholder="Name">
+                <input type="text" class="input2" placeholder="Classroom Number">
+                <input type="text" class="input3" placeholder="Phone Extension">
+                <input type="text" class="input4" placeholder="Which Lunch Period">
+            </div>
+        </div>
+        <div class="orderconfirmation">
+            <h2 class="orderheader">Your order:</h2>
+            <div class="orderdisplay">
+                <p id="entreedisplay"></p>
+                <p id="sidedisplay"></p>
+                <p id="drinkdisplay"></p>
+                <p id="dessertdisplay"></p>
+            </div>
+            <button class="orderconfirm">Confirm?</button>
+            <p class="orderdisplay">*This cannot be changed once clicked*</p>
+        </div>
+    </div>
+    <div class="foodsegment">
+        <div class="entree">
+            <h1 class="entree-title">Entrees(choose one)</h1>
+            <div class="entree-grid">
+                <div class="entree2" id="firstentree">
+                    <img src="images.jpg" class="entree-image">
+                    <p class="burger-subtitle" id="entree1">Burger</p>
+                    <p class="burger-subtitle">15$</p>
+                    <button class="entreebutton" id="entrees-selector" data-target="entree1">Add to Order</button>
+                </div>
+                <div class="entree2">
+                    <img src="images.jpg" class="entree-image">
+                    <p class="burger-subtitle" id="entree2">Nachos</p>
+                    <p class="burger-subtitle">15$</p>
+                    <button class="entreebutton" id="entrees-selector" data-target="entree2">Add to Order</button>
+                </div>
+                <div class="entree2">
+                    <img src="images.jpg" class="entree-image">
+                    <p class="burger-subtitle" id="entree3">Steak</p>
+                    <p class="burger-subtitle">15$</p>
+                    <button class="entreebutton" id="entrees-selector" data-target="entree3">Add to Order</button>
+                </div>
+                <div class="entree2" id="lastentree">
+                    <img src="images.jpg" class="entree-image">
+                    <p class="burger-subtitle" id="entree4">Pasta</p>
+                    <p class="burger-subtitle">15$</p>
+                    <button class="entreebutton" id="entrees-selector" data-target="entree4">Add to Order</button>
+                </div>
+            </div>
+        </div>
+        <div class="sides">
+            <h1 class="side-title">Sides(choose one)</h1>
+            <div class="side-grid">
+                <div class="side2">
+                    <img src="images.jpg" class="entree-image">
+                    <p class="burger-subtitle" id="side1">Fries</p>
+                    <p class="burger-subtitle">15$</p>
+                    <button class="entreebutton" id="sides-selector" data-target="side1">Add to Order</button>
+                </div>
+                <div class="side2">
+                    <img src="images.jpg" class="entree-image">
+                    <p class="burger-subtitle" id="side2">Tater Tots</p>
+                    <p class="burger-subtitle">15$</p>
+                    <button class="entreebutton" id="sides-selector" data-target="side2">Add to Order</button>
+                </div>
+                <div class="side2">
+                    <img src="images.jpg" class="entree-image">
+                    <p class="burger-subtitle" id="side3">Apple Slices</p>
+                    <p class="burger-subtitle">15$</p>
+                    <button class="entreebutton" id="sides-selector" data-target="side3">Add to Order</button>
+                </div>
+                <div class="side2">
+                    <img src="images.jpg" class="entree-image">
+                    <p class="burger-subtitle" id="side4">Waffle Fries</p>
+                    <p class="burger-subtitle">15$</p>
+                    <button class="entreebutton" id="sides-selector" data-target="side4">Add to Order</button>
+                </div>
+            </div>
+        </div>
+        <div class="desserts">
+            <h1 class="dessert-title">Desserts(choose one)</h1>
+            <div class="dessert-grid">
+                <div class="dessert2">
+                    <img src="images.jpg" class="entree-image">
+                    <p class="burger-subtitle" id="dessert1">Cake</p>
+                    <p class="burger-subtitle">15$</p>
+                    <button class="entreebutton" id="desserts-selector" data-target="dessert1">Add to Order</button>
+                </div>
+                <div class="dessert2">
+                    <img src="images.jpg" class="entree-image">
+                    <p class="burger-subtitle" id="dessert2">Ice Cream</p>
+                    <p class="burger-subtitle">15$</p>
+                    <button class="entreebutton" id="desserts-selector" data-target="dessert2">Add to Order</button>
+                </div>
+                <div class="dessert2">
+                    <img src="images.jpg" class="entree-image">
+                    <p class="burger-subtitle" id="dessert3">Flan</p>
+                    <p class="burger-subtitle">15$</p>
+                    <button class="entreebutton" id="desserts-selector" data-target="dessert3">Add to Order</button>
+                </div>
+                <div class="dessert2">
+                    <img src="images.jpg" class="entree-image">
+                    <p class="burger-subtitle" id="dessert4">Cupcake</p>
+                    <p class="burger-subtitle">15$</p>
+                    <button class="entreebutton" id="desserts-selector" data-target="dessert4">Add to Order</button>
+                </div>
+            </div>
+        </div>
+        <div class="drinks">
+            <h1 class="drink-title">Drinks(choose one)</h1>
+            <div class="drink-grid">
+                <div class="drink2">
+                    <img src="images.jpg" class="entree-image">
+                    <p class="burger-subtitle" id="drink1">Sprite</p>
+                    <p class="burger-subtitle">15$</p>
+                    <button class="entreebutton" id="drinks-selector" data-target="drink1">Add to Order</button>
+                </div>
+                <div class="drink2">
+                    <img src="images.jpg" class="entree-image">
+                    <p class="burger-subtitle" id="drink2">Pepsi</p>
+                    <p class="burger-subtitle">15$</p>
+                    <button class="entreebutton" id="drinks-selector" data-target="drink2">Add to Order</button>
+                </div>
+                <div class="drink2">
+                    <img src="images.jpg" class="entree-image">
+                    <p class="burger-subtitle" id="drink3">Water</p>
+                    <p class="burger-subtitle">15$</p>
+                    <button class="entreebutton" id="drinks-selector" data-target="drink3">Add to Order</button>
+                </div>
+                <div class="drink2">
+                    <img src="images.jpg" class="entree-image">
+                    <p class="burger-subtitle" id="drink4">Tea</p>
+                    <p class="burger-subtitle">15$</p>
+                    <button class="entreebutton" id="drinks-selector" data-target="drink4">Add to Order</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="teacher.js"></script>
+</html>
